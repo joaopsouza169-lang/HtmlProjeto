@@ -1,0 +1,162 @@
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0 60px 0;
+    background-color: #ffffff;
+    color: #333;
+}
+
+
+.intro-categoria {
+    margin-bottom: 30px;
+}
+
+.titulo-maior {
+    color: #3b91c4;
+    font-size: 35px;
+    font-family: 'Arial Black', Impact, sans-serif;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.titulo-menor {
+    color: #3b91c4;
+    font-size: 25px;
+    font-family: 'Arial Black', Impact, sans-serif;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.linha-curta {
+    width: 60px;
+    border: 0;
+    border-top: 6px solid #000;
+    margin-bottom: 30px;
+    margin-left: 0;
+}
+
+.intro-categoria h2 {
+    font-size: 20px;
+    font-family: 'Arial Black', Impact, sans-serif;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.intro-categoria p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #000;
+}
+
+
+.barra-ferramentas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 40px;
+}
+
+.filtro select {
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    font-size: 13px;
+    color: #555;
+}
+
+.paginacao {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.pag-btn {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 13px;
+    color: #4d4d4d;
+}
+
+
+
+.grade-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px; /* Espaçamento entre os produtos */
+}
+
+
+.produto {
+    text-align: center;
+    background: #fff;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end; /* Empurra o preço para baixo, deixando os alinhados*/
+}
+
+.produto img {
+    max-width: 100%;
+    height: 250px; /* Fixa uma altura para as imagens não quebrarem o layout */
+    object-fit: contain; /* Mantém a proporção da imagem sem distorcer */
+    margin-bottom: 15px;
+}
+
+.produto h3 {
+    font-size: 12px;
+    font-family: 'Arial Black', Impact, sans-serif;
+    color: #000;
+    margin-bottom: 10px;
+    min-height: 40px; /* Alinha os títulos se um for maior que o outro */
+    text-transform: uppercase;
+}
+
+.preco-parcelado {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.preco-parcelado strong {
+    color: #000;
+    font-weight: bold;
+}
+
+.preco {
+    background-color: #0084ff;
+    color: #ffffff;
+    padding: 6px 20px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Arial Black', Impact, sans-serif;
+}
+
+.desconto {
+    background-color: #000;
+    color: #fff;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.zap-fixo {
+    width: 60px;
+    position: fixed;
+    top: 50%;          /* # Meio da tela na vertical */
+    right: 20px;       /* # Descola 20px da direita */
+    z-index: 1000;     /* # Fica por cima de tudo parecido com o absolute, mas o absolute travaria a imagem */
+    cursor: pointer;
+}

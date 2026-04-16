@@ -1,0 +1,187 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.conteudo-principal {
+    flex: 1;
+    background-color: #222222;
+}
+
+
+.cabecalho {
+    background-color: #1d91d0;
+    color: #ffffff;
+}
+
+
+.cabecalho-topo {
+    display: flex;
+    justify-content: space-between; /* # Espaça as 3 colunas (logo, busca, ícones) */
+    align-items: center;
+    padding: 20px 10%; /* # Adiciona margem nas laterais para não grudar na tela */
+}
+
+/* # Define que a logo e os ícones ocupem espaços iguais para a busca ficar no meio exato */
+.logo {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; /* # Puxa a logo um pouco mais para o centro */
+    padding-right: 30px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+
+.busca {
+    display: flex;
+    width: 350px; /* # Define um tamanho fixo e menor para a barra */
+}
+
+.busca input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.busca button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+
+.icones-topo {
+    flex: 1; /* # Equilibra o peso com a div da logo */
+    display: flex;
+    justify-content: flex-start; /* # Puxa os ícones um pouco mais para o centro */
+    gap: 15px;
+    padding-left: 30px;
+}
+
+.icones-topo img {
+    height: 25px;
+    cursor: pointer;
+}
+
+
+.menu-principal {
+    border-top: 1px solid #8ac6ed;
+    padding: 10px 0;
+}
+
+.menu-principal ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+}
+
+.menu-principal a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.rodape {
+    background-color: #1d91d0;
+    color: #ffffff;
+    padding: 30px 20px 10px 20px;
+    /*margin-top: 100px;*/
+}
+
+.rodape-colunas {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.coluna h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ffffff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.coluna ul {
+    list-style: none;
+}
+
+.coluna ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.icones {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.redes-sociais img {
+    height: 35px;
+}
+
+
+.pagamentos .icones {
+    max-width: 250px;
+
+}
+
+.pagamentos img {
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.redes-sociais p {
+    font-size: 12px;
+    color: #e0e0e0;
+}
+
+.rodape-direitos {
+    text-align: center;
+    border-top: 1px solid #8ac6ed;
+    padding-top: 10px;
+    font-size: 12px;
+}
+
+.textocasinha {
+    display: flex;
+    align-items: center; /* # Alinha o meio da casinha com o meio do texto */
+    gap: 12px;           /* # Gap um pouco maior para acompanhar o tamanho dos itens */
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 10%;
+}
+
+.textocasinha img {
+    height: 34px;
+    width: auto;        /* # Impede que a imagem fique esticada ou achatada */
+    margin-top: 1px;
+}

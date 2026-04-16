@@ -1,0 +1,197 @@
+
+main {
+    background-color: #ffffff;
+    color: #333;
+    padding-bottom: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.banner img {
+    width: 100%;
+    display: block;
+}
+
+
+.linha-titulo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.linha-titulo h2 {
+    color: #3498db;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.linha-titulo hr {
+    flex: 1; /* # Faz as linhas ocuparem o espaço vazio */
+    border: none;
+    border-top: 1px solid #c4c4c4;
+}
+
+
+.grade-4 {
+    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    gap: 20px;}
+
+
+.grade-3 {
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    gap: 20px;}
+
+
+.produto {
+    text-align: center;
+    position: relative; /* # Faz com que a caixa de tag de desconto não sair da caixa */
+    background: #fff;
+    padding: 15px;
+}
+
+.produto img {
+    max-width: 180px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.produto h3 {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 10px;
+    min-height: 30px;
+}
+
+
+.preco {
+    background-color: #0084ff;
+    color: #ffffff;
+    padding: 6px 12px;
+    display:inline-block;
+    font-weight: bold;
+}
+
+.caixa-preco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.preco-antigo {
+    color: #888;
+    font-size: 14px;
+}
+
+.desconto {
+    background-color: #000;
+    color: #fff;
+    padding: 3px 8px;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+
+.linha {
+    display: flex;
+    gap: 30px;
+}
+
+.coluna {
+    flex: 1;
+}
+
+.borda-direita {
+    border-right: 1px solid #c4c4c4;
+    padding-right: 30px;
+}
+
+/* # DEPOIMENTOS */
+.area-depoimentos {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.depoimento {
+    flex: 1;
+}
+
+.depoimento img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.depoimento h3 { font-size: 18px; }
+
+.cidade {
+    color: #888;
+    font-size: 14px;
+    margin: 5px 0 15px 0;
+}
+
+.depoimento p {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.seta {
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+
+.boletim-email {
+    background-color: #f4f4f4;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.boletim-email strong { font-size: 14px; }
+
+.boletim-email input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+}
+
+.boletim-email button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.zap-fixo {
+    width: 60px;
+    position: fixed;
+    top: 50%;          /* # Meio da tela na vertical */
+    right: 20px;       /* # Descola 20px da direita */
+    z-index: 1000;     /* # Fica por cima de tudo parecido com o absolute, mas o absolute travaria a imagem */
+    cursor: pointer;
+}

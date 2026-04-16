@@ -1,0 +1,109 @@
+
+.pagina-contato {
+    background-color: #f1f1f1;
+    padding: 50px 20px;
+}
+
+.container-contato {
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+
+.titulo-contato {
+    font-size: 2.5rem;
+    font-family: 'Arial Black', Impact, sans-serif;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.linha-divisoria {
+    border: 0;
+    border-top: 1px solid #7a7a7a;
+    margin-bottom: 40px;
+}
+
+
+.conteudo-contato {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+
+.info-contato {
+    width: 40%;
+    font-size: 16px;
+    color: #000;
+    line-height: 1.6;
+}
+
+.info-contato p {
+    margin-bottom: 20px;
+}
+
+.icones-sociais {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.icones-sociais img {
+    width: 30px;
+    cursor: pointer;
+}
+
+.foto-atendente {
+    width: 100%;
+    max-width: 280px;
+    border-radius: 2px;
+}
+
+
+.form-contato {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+
+    /* X | Y | Desfoque | Cor */
+    box-shadow: 0 4px 10px 0 black;
+}
+/* Uma única classe controla todos os inputs e textarea */
+.campo-texto {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.campo-texto::placeholder {
+    color: #a9a9a9;
+    font-weight: bold;
+}
+
+
+.btn-enviar {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 40px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: max-content;
+    margin-top: 10px;
+}
+
+.btn-enviar:hover {
+    background-color: #333;
+}
+
